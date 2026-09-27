@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yasho Ramith | Senior AI Platform & Systems Engineer</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        termDark: '#0b0f19',
+                        termCard: '#111827',
+                        termBorder: '#1f293d',
+                        accentGreen: '#10b981',
+                        accentBlue: '#3b82f6',
+                        accentCyan: '#06b6d4',
+                    },
+                    fontFamily: {
+                        mono: ['"Fira Code"', 'monospace'],
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glow-effect {
+            box-shadow: 0 0 25px -5px rgba(16, 185, 129, 0.15);
+        }
+        .glow-effect:hover {
+            box-shadow: 0 0 30px 0px rgba(16, 185, 129, 0.3);
+        }
+    </style>
+</head>
+<body class="bg-termDark text-gray-300 font-sans antialiased selection:bg-accentGreen selection:text-termDark min-h-screen flex flex-col justify-between">
+
+    <!-- Toast Notification -->
+    <div id="toast" class="fixed bottom-5 right-5 bg-accentGreen text-termDark px-4 py-2 rounded-lg font-mono text-sm font-semibold shadow-lg translate-y-20 opacity-0 transition-all duration-300 z-50 flex items-center gap-2">
+        <i class="fa-solid fa-check-circle"></i>
+        <span id="toast-msg">Copied to clipboard!</span>
+    </div>
+
+    <!-- Navigation Header -->
+    <header class="sticky top-0 z-40 bg-termDark/80 backdrop-blur-md border-b border-termBorder">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <a href="#" class="font-mono text-lg font-bold tracking-tight text-white flex items-center gap-2">
+                <span class="text-accentGreen">&gt;</span> yasho_ramith<span class="animate-pulse text-accentGreen">_</span>
+            </a>
+            <nav class="hidden md:flex items-center space-x-6 font-mono text-xs tracking-wider uppercase text-gray-400">
+                <a href="#about" class="hover:text-accentGreen transition-colors">&lt;About /&gt;</a>
+                <a href="#skills" class="hover:text-accentGreen transition-colors">&lt;Skills /&gt;</a>
+                <a href="#experience" class="hover:text-accentGreen transition-colors">&lt;Experience /&gt;</a>
+                <a href="#projects" class="hover:text-accentGreen transition-colors">&lt;Projects /&gt;</a>
+                <a href="#contact" class="hover:text-accentGreen transition-colors">&lt;Contact /&gt;</a>
+            </nav>
+            <div class="flex items-center gap-3 font-mono text-xs">
+                <a href="mailto:yashoramith@gmail.com" class="px-3 py-1.5 rounded border border-accentGreen/40 text-accentGreen hover:bg-accentGreen/10 transition-colors">
+                    <i class="fa-regular fa-envelope mr-1"></i> Email
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 pb-16 space-y-20">
+
+        <!-- Hero Section -->
+        <section id="about" class="pt-6">
+            <div class="bg-termCard border border-termBorder rounded-xl p-6 sm:p-8 glow-effect relative overflow-hidden">
+                <div class="flex items-center gap-2 border-b border-termBorder pb-4 mb-6">
+                    <div class="w-3 h-3 rounded-full bg-red-500/80"></div>
+                    <div class="w-3 h-3 rounded-full bg-yellow-500/80"></div>
+                    <div class="w-3 h-3 rounded-full bg-green-500/80"></div>
+                    <span class="font-mono text-xs text-gray-500 ml-2">bash - yashoramith@salesforce-smts</span>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
+                    <div class="md:col-span-2 space-y-4">
+                        <div class="inline-block font-mono text-xs px-2.5 py-1 bg-accentGreen/10 border border-accentGreen/30 text-accentGreen rounded">
+                            Senior Member of Technical Staff @ Salesforce
+                        </div>
+                        <h1 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight">
+                            Yasho Ramith
+                        </h1>
+                        <p class="font-mono text-sm text-accentCyan">
+                            AI Platform Engineering | Distributed Systems | LLM Inference & Eval
+                        </p>
+                        <p class="text-gray-400 text-sm leading-relaxed pt-2">
+                            Engineered high-throughput enterprise AI execution platforms and event-driven systems[cite: 1]. Specializing in optimizing LLM inference routing, context engineering, RAG pipelines, and building resilient agent evaluation harnesses at scale[cite: 1].
+                        </p>
+
+                        <!-- Metric Highlights -->
+                        <div class="grid grid-cols-3 gap-3 pt-4 border-t border-termBorder/60 font-mono">
+                            <div class="bg-termDark/50 p-3 rounded border border-termBorder">
+                                <div class="text-accentGreen text-lg sm:text-xl font-bold">~35%</div>
+                                <div class="text-[10px] text-gray-400 uppercase">Latency Red.[cite: 1]</div>
+                            </div>
+                            <div class="bg-termDark/50 p-3 rounded border border-termBorder">
+                                <div class="text-accentBlue text-lg sm:text-xl font-bold">3x</div>
+                                <div class="text-[10px] text-gray-400 uppercase">Throughput Inc.[cite: 1]</div>
+                            </div>
+                            <div class="bg-termDark/50 p-3 rounded border border-termBorder">
+                                <div class="text-accentCyan text-lg sm:text-xl font-bold">69.8M+</div>
+                                <div class="text-[10px] text-gray-400 uppercase">Records Processed[cite: 1]</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- System Info Sidebar -->
+                    <div class="bg-termDark p-5 rounded-lg border border-termBorder space-y-3 font-mono text-xs">
+                        <div class="text-gray-400 font-semibold uppercase tracking-wider pb-2 border-b border-termBorder">System Info</div>
+                        <div class="flex items-center justify-between text-gray-300">
+                            <span><i class="fa-solid fa-graduation-cap text-accentGreen mr-2"></i>Edu:</span>
+                            <span class="text-right text-gray-400">BITS Pilani (B.Tech CSE)[cite: 1]</span>
+                        </div>
+                        <div class="flex items-center justify-between text-gray-300">
+                            <span><i class="fa-solid fa-location-dot text-accentGreen mr-2"></i>Location:</span>
+                            <span class="text-right text-gray-400">Bangalore, India[cite: 1]</span>
+                        </div>
+                        <div class="flex items-center justify-between text-gray-300">
+                            <span><i class="fa-regular fa-envelope text-accentGreen mr-2"></i>Email:</span>
+                            <button onclick="copyToClipboard('yashoramith@gmail.com')" class="text-accentCyan hover:underline text-right">
+                                yashoramith@...[cite: 1]
+                            </button>
+                        </div>
+                        <div class="flex items-center justify-between text-gray-300">
+                            <span><i class="fa-brands fa-linkedin text-accentGreen mr-2"></i>LinkedIn:</span>
+                            <a href="https://linkedin.com/in/yasho-ramith-a662622ab" target="_blank" class="text-accentCyan hover:underline text-right">yasho-ramith[cite: 1]</a>
+                        </div>
+                        <div class="flex items-center justify-between text-gray-300">
+                            <span><i class="fa-solid fa-phone text-accentGreen mr-2"></i>Phone:</span>
+                            <button onclick="copyToClipboard('9566054524')" class="text-accentCyan hover:underline text-right">+91 9566054524[cite: 1]</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Skills Section -->
+        <section id="skills" class="space-y-6">
+            <div class="flex items-center gap-3">
+                <span class="font-mono text-accentGreen text-lg">&gt;</span>
+                <h2 class="text-2xl font-bold text-white tracking-tight">Technical Stack[cite: 1]</h2>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div class="bg-termCard p-5 rounded-lg border border-termBorder space-y-3">
+                    <div class="flex items-center gap-2 font-mono text-sm text-accentGreen font-semibold">
+                        <i class="fa-solid fa-brain"></i> AI / LLM & Agents[cite: 1]
+                    </div>
+                    <div class="flex flex-wrap gap-1.5 font-mono text-xs">
+                        <span class="bg-termDark border border-termBorder px-2.5 py-1 rounded text-gray-300">LLMs[cite: 1]</span>
+                        <span class="bg-termDark border border-termBorder px-2.5 py-1 rounded text-gray-300">RAG[cite: 1]</span>
+                        <span class="bg-termDark border border-termBorder px-2.5 py-1 rounded text-gray-300">MCP[cite: 1]</span>
+                        <span class="bg-termDark border border-termBorder px-2.5 py-1 rounded text-gray-300">Agentic AI[cite: 1]</span>
+                        <span class="bg-termDark border border-termBorder px-2.5 py-1 rounded text-gray-300">Prompt Eng.[cite: 1]</span>
+                        <span class="bg-termDark border border-termBorder px-2.5 py-1 rounded text-gray-300">Context Eng.[cite: 1]</span>
+                    </div>
+                </div>
+
+                <div class="bg-termCard p-5 rounded-lg border border-termBorder space-y-3">
+                    <div class="flex items-center gap-2 font-mono text-sm text-accentBlue font-semibold">
+                        <i class="fa-solid fa-gears"></i> Backend & Distributed[cite: 1]
+                    </div>
+                    <div class="flex flex-wrap gap-1.5 font-mono text-xs">
+                        <span class="bg-termDark border border-termBorder px-2.5 py-1 rounded text-gray-300">Java / Spring Boot[cite: 1]</span>
+                        <span class="bg-termDark border border-termBorder px-2.5 py-1 rounded text-gray-300">FastAPI[cite: 1]</span>
+                        <span class="bg-termDark border border-termBorder px-2.5 py-1 rounded text-gray-300">Apache Kafka[cite: 1]</span>
+                        <span class="bg-termDark border border-termBorder px-2.5 py-1 rounded text-gray-300">Node.js[cite: 1]</span>
+                        <span class="bg-termDark border border-termBorder px-2.5 py-1 rounded text-gray-300">Microservices[cite: 1]</span>
+                        <span class="bg-termDark border border-termBorder px-2.5 py-1 rounded text-gray-300">GraphQL / REST[cite: 1]</span>
+                    </div>
+                </div>
+
+                <div class="bg-termCard p-5 rounded-lg border border-termBorder space-y-3">
+                    <div class="flex items-center gap-2 font-mono text-sm text-accentCyan font-semibold">
+                        <i class="fa-solid fa-server"></i> Cloud & Infrastructure[cite: 1]
+                    </div>
+                    <div class="flex flex-wrap gap-1.5 font-mono text-xs">
+                        <span class="bg-termDark border border-termBorder px-2.5 py-1 rounded text-gray-300">AWS / Azure / GCP[cite: 1]</span>
+                        <span class="bg-termDark border border-termBorder px-2.5 py-1 rounded text-gray-300">Docker[cite: 1]</span>
+                        <span class="bg-termDark border border-termBorder px-2.5 py-1 rounded text-gray-300">Kubernetes[cite: 1]</span>
+                        <span class="bg-termDark border border-termBorder px-2.5 py-1 rounded text-gray-300">ArgoCD[cite: 1]</span>
+                        <span class="bg-termDark border border-termBorder px-2.5 py-1 rounded text-gray-300">GitHub Actions[cite: 1]</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Timeline Section -->
+        <section id="experience" class="space-y-6">
+            <div class="flex items-center gap-3">
+                <span class="font-mono text-accentGreen text-lg">&gt;</span>
+                <h2 class="text-2xl font-bold text-white tracking-tight">Work History[cite: 1]</h2>
+            </div>
+
+            <div class="space-y-6">
+                <!-- Role 1: Salesforce SMTS -->
+                <div class="bg-termCard border border-termBorder rounded-lg p-6 relative">
+                    <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-4 gap-2">
+                        <div>
+                            <h3 class="text-lg font-bold text-white">Senior Member of Technical Staff (SMTS) - AI Platform Engineering[cite: 1]</h3>
+                            <p class="font-mono text-xs text-accentGreen">Salesforce | Bangalore, India[cite: 1]</p>
+                        </div>
+                        <span class="font-mono text-xs px-2.5 py-1 bg-termDark border border-termBorder rounded text-gray-400">
+                            Aug 2024 - Present[cite: 1]
+                        </span>
+                    </div>
+                    <ul class="list-disc list-inside text-sm text-gray-300 space-y-2 leading-relaxed">
+                        <li>Reduced backend latency by ~35% for enterprise AI platforms via request routing, caching, & token optimization[cite: 1].</li>
+                        <li>Increased processing throughput ~3x for asynchronous AI ops via Kafka, Redis, GraphQL, & worker services[cite: 1].</li>
+                        <li>Built reusable Model Context Protocol (MCP) interfaces over enterprise APIs, creating standard contracts[cite: 1].</li>
+                        <li>Productionized AI workflows using Kubernetes, Docker, ArgoCD, and custom evaluation gates[cite: 1].</li>
+                    </ul>
+                </div>
+
+                <!-- Role 2: Salesforce MTS -->
+                <div class="bg-termCard border border-termBorder rounded-lg p-6 relative">
+                    <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-4 gap-2">
+                        <div>
+                            <h3 class="text-lg font-bold text-white">Member of Technical Staff (MTS) - Backend Systems[cite: 1]</h3>
+                            <p class="font-mono text-xs text-accentBlue">Salesforce | Bangalore, India[cite: 1]</p>
+                        </div>
+                        <span class="font-mono text-xs px-2.5 py-1 bg-termDark border border-termBorder rounded text-gray-400">
+                            Jun 2023 - Aug 2024[cite: 1]
+                        </span>
+                    </div>
+                    <ul class="list-disc list-inside text-sm text-gray-300 space-y-2 leading-relaxed">
+                        <li>Redesigned event-driven workflow ingestion boundaries using Java 17 & Spring Boot, boosting throughput ~60%[cite: 1].</li>
+                        <li>Reduced AWS Lambda cold-start latency ~40% by restructuring initialization logic[cite: 1].</li>
+                        <li>Instrumented request paths with OpenTelemetry & CloudWatch for granular observability[cite: 1].</li>
+                    </ul>
+                </div>
+
+                <!-- Role 3: Walmart -->
+                <div class="bg-termCard border border-termBorder rounded-lg p-6 relative">
+                    <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-4 gap-2">
+                        <div>
+                            <h3 class="text-lg font-bold text-white">Software Engineer - Data Platform & Fraud Analytics[cite: 1]</h3>
+                            <p class="font-mono text-xs text-accentCyan">Walmart | India[cite: 1]</p>
+                        </div>
+                        <span class="font-mono text-xs px-2.5 py-1 bg-termDark border border-termBorder rounded text-gray-400">
+                            Jun 2021 - Jun 2023[cite: 1]
+                        </span>
+                    </div>
+                    <ul class="list-disc list-inside text-sm text-gray-300 space-y-2 leading-relaxed">
+                        <li>Designed archival telemetry pipelines processing 69.8M+ records for cloud-cost optimization[cite: 1].</li>
+                        <li>Engineered Spark-based transformations & BigQuery-native queries across datasets with 100M+ rows[cite: 1].</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="space-y-6">
+            <div class="flex items-center gap-3">
+                <span class="font-mono text-accentGreen text-lg">&gt;</span>
+                <h2 class="text-2xl font-bold text-white tracking-tight">Key Projects[cite: 1]</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Project 1 -->
+                <div class="bg-termCard border border-termBorder rounded-lg p-5 flex flex-col justify-between">
+                    <div class="space-y-3">
+                        <div class="font-mono text-xs text-accentGreen">&gt; Platform[cite: 1]</div>
+                        <h3 class="text-lg font-bold text-white">Inference Engineering Platform[cite: 1]</h3>
+                        <p class="text-xs text-gray-400 leading-relaxed">
+                            Production-oriented LLM inference layer focused on reducing serving overhead through routing, batching, caching, and token-aware execution[cite: 1].
+                        </p>
+                    </div>
+                    <div class="pt-4 flex flex-wrap gap-1 font-mono text-[10px]">
+                        <span class="bg-termDark border border-termBorder px-2 py-0.5 rounded text-gray-400">FastAPI[cite: 1]</span>
+                        <span class="bg-termDark border border-termBorder px-2 py-0.5 rounded text-gray-400">PyTorch[cite: 1]</span>
+                        <span class="bg-termDark border border-termBorder px-2 py-0.5 rounded text-gray-400">RAG[cite: 1]</span>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="bg-termCard border border-termBorder rounded-lg p-5 flex flex-col justify-between">
+                    <div class="space-y-3">
+                        <div class="font-mono text-xs text-accentBlue">&gt; Evaluation[cite: 1]</div>
+                        <h3 class="text-lg font-bold text-white">Harness Bench[cite: 1]</h3>
+                        <p class="text-xs text-gray-400 leading-relaxed">
+                            Agent evaluation harness replaying production-like tasks to score full execution traces, increasing eval quality from 0.79 to 0.93[cite: 1].
+                        </p>
+                    </div>
+                    <div class="pt-4 flex flex-wrap gap-1 font-mono text-[10px]">
+                        <span class="bg-termDark border border-termBorder px-2 py-0.5 rounded text-gray-400">Python[cite: 1]</span>
+                        <span class="bg-termDark border border-termBorder px-2 py-0.5 rounded text-gray-400">MCP[cite: 1]</span>
+                        <span class="bg-termDark border border-termBorder px-2 py-0.5 rounded text-gray-400">LLM Tracing[cite: 1]</span>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="bg-termCard border border-termBorder rounded-lg p-5 flex flex-col justify-between">
+                    <div class="space-y-3">
+                        <div class="font-mono text-xs text-accentCyan">&gt; Agent Platform[cite: 1]</div>
+                        <h3 class="text-lg font-bold text-white">Jevis AI Enterprise[cite: 1]</h3>
+                        <p class="text-xs text-gray-400 leading-relaxed">
+                            Enterprise AI platform converting natural language requests into multi-step operational workflows using LLMs, MCP tools, and human-in-the-loop approvals[cite: 1].
+                        </p>
+                    </div>
+                    <div class="pt-4 flex flex-wrap gap-1 font-mono text-[10px]">
+                        <span class="bg-termDark border border-termBorder px-2 py-0.5 rounded text-gray-400">FastAPI[cite: 1]</span>
+                        <span class="bg-termDark border border-termBorder px-2 py-0.5 rounded text-gray-400">RAG[cite: 1]</span>
+                        <span class="bg-termDark border border-termBorder px-2 py-0.5 rounded text-gray-400">MCP[cite: 1]</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <section id="contact" class="border-t border-termBorder pt-8 text-center font-mono text-xs text-gray-500 space-y-3">
+            <p>Designed & Engineered by <span class="text-gray-300">Yasho Ramith</span>[cite: 1]</p>
+            <div class="flex justify-center gap-4 text-sm text-gray-400">
+                <a href="https://linkedin.com/in/yasho-ramith-a662622ab" target="_blank" class="hover:text-accentGreen"><i class="fa-brands fa-linkedin"></i>[cite: 1]</a>
+                <a href="mailto:yashoramith@gmail.com" class="hover:text-accentGreen"><i class="fa-regular fa-envelope"></i>[cite: 1]</a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- JavaScript Functions -->
+    <script>
+        function copyToClipboard(text) {
+            navigator.clipboard.writeText(text);
+            const toast = document.getElementById('toast');
+            const toastMsg = document.getElementById('toast-msg');
+            toastMsg.innerText = 'Copied to clipboard: ' + text;
+            toast.classList.remove('translate-y-20', 'opacity-0');
+            setTimeout(() => {
+                toast.classList.add('translate-y-20', 'opacity-0');
+            }, 2500);
+        }
+    </script>
+</body>
+</html>
